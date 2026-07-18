@@ -7,8 +7,7 @@ momentos = {'Mañana', 'Tarde', 'Noche'};
 disp('Ingrese las temperaturas para cada zona y momento del día:');
 for i = 1:3
 for j = 1:3
-prompt = sprintf('Temperatura en %s durante la %s: ', zonas{i},
-momentos{j});
+prompt = sprintf('Temperatura en %s durante la %s: ', zonas{i},momentos{j});
 temperaturas(i,j) = input(prompt);
 end
 end
@@ -18,8 +17,7 @@ alarma_activada = false;
 for i = 1:3
 for j = 1:3
 if temperaturas(i,j) > 40
-fprintf('Alarma activada en %s durante la %s: %.1f°C\n',
-zonas{i}, momentos{j}, temperaturas(i,j));
+fprintf('Alarma activada en %s durante la %s: %.1f°C\n',zonas{i}, momentos{j}, temperaturas(i,j));
 alarma_activada = true;
 end
 end
